@@ -4,19 +4,8 @@ Web para visualizar el kiosco del IES FUERTE DE CORTADURA
 # Welcome to your Expo app 👋
 # 📺 KioscoApp - Cartelería Digital Educativa (Android TV / Web)
  
--This is an Expo project created with `create-expo-app`.
 +Sistema de **Cartelería Digital (Digital Signage)** diseñado para centros educativos. Permite rotar información relevante (guardias, ausencias, noticias, tiempo) en pantallas de TV (Android TV) o dispositivos móviles, gestionado dinámicamente desde **Google Sheets**.
  
--## Get started
-+!Platform
-+!Tech
-+!License
- 
--1. Install dependencies
-+## ✨ Características Principales
- 
--   ```bash
--   npm install
 -   ```
 +### 🔄 Sistema de Rotación (Carrusel)
 +La aplicación rota automáticamente entre diferentes pantallas informativas:
@@ -38,9 +27,7 @@ Web para visualizar el kiosco del IES FUERTE DE CORTADURA
 +  - 🔴 **Urgente**
 +  - 🟢 **Éxito**
  
--   ```bash
--   npx expo start
--   ```
+
 +### 🔔 Guardia Override (Cambio de Clase)
 +Detecta automáticamente los cambios de tramo horario (según configuración del centro).
 +- **Interrupción:** Detiene el carrusel cuando suena el timbre.
@@ -55,38 +42,9 @@ Web para visualizar el kiosco del IES FUERTE DE CORTADURA
 +- **Indicador de Salud:** Icono (Nube) que indica si los datos están actualizados o si hay error de conexión.
  
 +## 🚀 Instalación y Puesta en Marcha
- 
--## Get a fresh project
-+### Prerrequisitos
-+- Node.js y npm instalados.
-+- Cuenta de Expo (opcional para builds).
- 
--When you're ready, run:
-+### Pasos
-+1. **Clonar el repositorio:**
-+   ```bash
-+   git clone https://github.com/tu-usuario/kioscoapp-tv.git
-+   cd kioscoapp-tv
-+   ```
--```bash
--npm run reset-project
--```
-+2. **Instalar dependencias:**
-+   ```bash
-+   npm install
-+   ```
- 
--This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-+3. **Ejecutar en desarrollo:**
-+   ```bash
-+   npx expo start
-+   ```
-+   - Presiona `a` para Android.
-+   - Presiona `w` para Web.
- 
--## Learn more
-+---
 
++ Por realizar
++ 
 +## ⚙️ Configuración y Uso
  
 +### 1. Preparar los Datos (Google Sheets)
