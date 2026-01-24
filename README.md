@@ -77,16 +77,16 @@ Web para visualizar el kiosco del IES FUERTE DE CORTADURA
 +## 📂 Estructura del Proyecto
 +
 +```
-+/
-+├── assets/             # Imágenes y sonidos
-+├── components/         # Componentes UI (Reloj, Alertas, etc.)
-+├── context/            # Estado global (AppContext) y lógica de datos
-+├── navigation/         # Navegación (Stack Navigator)
-+├── screens/            # Pantallas principales (Guardia, Ausencias, Config...)
-+├── services/           # Lógica de fetch (dataService)
-+└── App.js              # Punto de entrada
++ -/
++ - ├── assets/             # Imágenes y sonidos
++ - ├── components/         # Componentes UI (Reloj, Alertas, etc.)
++ - ├── context/            # Estado global (AppContext) y lógica de datos
++ - ├── navigation/         # Navegación (Stack Navigator)
++ - ├── screens/            # Pantallas principales (Guardia, Ausencias, Config...)
++ - ├── services/           # Lógica de fetch (dataService)
++ -└── App.js              # Punto de entrada
 +```
 +
 +## 📄 Licencia
-+Este proyecto está bajo la Licencia MIT.
++ -Este proyecto está bajo la Licencia MIT.
 
