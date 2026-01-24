@@ -7,7 +7,7 @@ Web para visualizar el kiosco del IES FUERTE DE CORTADURA
 +Sistema de **Cartelería Digital (Digital Signage)** diseñado para centros educativos. Permite rotar información relevante (guardias, ausencias, noticias, tiempo) en pantallas de TV (Android TV) o dispositivos móviles, gestionado dinámicamente desde **Google Sheets**.
  
 -   ```
-+### 🔄 Sistema de Rotación (Carrusel)
++### 🔄 Sistema de Rotación (Carrusel):
 +La aplicación rota automáticamente entre diferentes pantallas informativas:
 +- **Guardias:** Profesores de guardia en el tramo actual.
 +- **Ausencias:** Listado diario de profesores ausentes.
