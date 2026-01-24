@@ -38,8 +38,8 @@ Web para visualizar el kiosco del IES FUERTE DE CORTADURA
 
 +### 🛠️ Administración Remota (Google Sheets)
 +No requiere backend complejo. Toda la información se gestiona editando hojas de cálculo de Google publicadas como CSV.
-+- **Sincronización:** Actualización automática cada 60 segundos.
-+- **Indicador de Salud:** Icono (Nube) que indica si los datos están actualizados o si hay error de conexión.
++ - **Sincronización:** Actualización automática cada 60 segundos.
++ - **Indicador de Salud:** Icono (Nube) que indica si los datos están actualizados o si hay error de conexión.
  
 +## 🚀 Instalación y Puesta en Marcha
 
@@ -51,26 +51,26 @@ Web para visualizar el kiosco del IES FUERTE DE CORTADURA
 +Crea 4 hojas de cálculo (o pestañas) y publícalas como CSV (`Archivo > Compartir > Publicar en la web > CSV`).
 
 +**Formatos de Columnas Esperados (Flexible):**
-+*   **Guardias:** `Día`, `Tramo`, `Profesor`, `Zona`.
-+*   **Alertas:** `Activo` (SI/NO), `Fecha Inicio`, `Fecha Fin`, `Hora Inicio`, `Hora Fin`, `Mensaje`, `Tipo`.
-+*   **Ausencias:** `Profesor`, `Hora`, `Grupo`, `Aula`.
-+*   **Actividades:** `Fecha`, `Hora`, `Actividad`, `Lugar`.
++ - **Guardias:** `Día`, `Tramo`, `Profesor`, `Zona`.
++ -  **Alertas:** `Activo` (SI/NO), `Fecha Inicio`, `Fecha Fin`, `Hora Inicio`, `Hora Fin`, `Mensaje`, `Tipo`.
++ -  **Ausencias:** `Profesor`, `Hora`, `Grupo`, `Aula`.
++ -  **Actividades:** `Fecha`, `Hora`, `Actividad`, `Lugar`.
  
 +### 2. Configuración en la App
 +1. Abre la aplicación.
 +2. Haz clic en el botón de engranaje (⚙️) en la esquina inferior derecha (o navega con el mando de la TV).
 +3. Introduce el PIN de administrador (Por defecto: `1234`).
 +4. En el menú, configura:
-+    - **URLs:** Pega los enlaces CSV de tus hojas de Google.
-+    - **Tiempos:** Intervalo de rotación y frecuencia de actualización.
-+    - **Horarios:** Define los tramos horarios de tu centro.
-+    - **Módulos:** Activa/Desactiva pantallas (Tiempo, RSS, WebViews).
++ - **URLs:** Pega los enlaces CSV de tus hojas de Google.
++ - **Tiempos:** Intervalo de rotación y frecuencia de actualización.
++ - **Horarios:** Define los tramos horarios de tu centro.
++ - **Módulos:** Activa/Desactiva pantallas (Tiempo, RSS, WebViews).
  
 
 +## 📱 Controles (Android TV)
 +La interfaz está optimizada para navegación con D-Pad (Mando a distancia).
-+- **Navegación:** Usa las flechas para mover el foco.
-+- **Configuración:** Mueve el foco al icono ⚙️ y pulsa OK/Enter.
++ - **Navegación:** Usa las flechas para mover el foco.
++ - **Configuración:** Mueve el foco al icono ⚙️ y pulsa OK/Enter.
 +
 +---
 +
