@@ -1,17 +1,134 @@
 # ermendaa.github.io
 Web para visualizar el kiosco del IES FUERTE DE CORTADURA
-Varias pantallas:
-- Ausencias
-- Resumen
-- Actividades
-- Alertas
-- RSS
-- El tiempo
-- Webs extras
 
-Tiene caracteristicas avanzadas:
-- Rotación configurable
-- Actualización configurable
-- Scroll automático de algunas pantallas
-- Notificación de cambio de tramo horario
-- Permanencia configurable de la pantalla de Ausencias durante el cambio de tramo horario
+# Welcome to your Expo app 👋
+# 📺 KioscoApp - Cartelería Digital Educativa (Android TV / Web)
+ 
+-This is an Expo project created with `create-expo-app`.
++Sistema de **Cartelería Digital (Digital Signage)** diseñado para centros educativos. Permite rotar información relevante (guardias, ausencias, noticias, tiempo) en pantallas de TV (Android TV) o dispositivos móviles, gestionado dinámicamente desde **Google Sheets**.
+ 
+-## Get started
++!Platform
++!Tech
++!License
+ 
+-1. Install dependencies
++## ✨ Características Principales
+ 
+-   ```bash
+-   npm install
+-   ```
++### 🔄 Sistema de Rotación (Carrusel)
++La aplicación rota automáticamente entre diferentes pantallas informativas:
++- **Guardias:** Profesores de guardia en el tramo actual.
++- **Ausencias:** Listado diario de profesores ausentes.
++- **Actividades:** Eventos y actividades extraescolares.
++- **Resumen:** Vista consolidada del día.
++- **Noticias (RSS):** Feed de noticias configurable (ej: El Mundo).
++- **El Tiempo:** Pronóstico meteorológico local.
++- **WebViews:** Capacidad para incrustar hasta 2 páginas web externas.
+ 
+-2. Start the app
++### 🚨 Sistema de Alertas Globales (Marquesina)
++Ticker de noticias desplazable en la parte inferior para avisos urgentes.
++- **Filtrado Temporal:** Se muestran solo si están vigentes (Fecha/Hora inicio y fin).
++- **Tipos de Alerta:**
++  - 🔵 **Info**
++  - 🟠 **Aviso**
++  - 🔴 **Urgente**
++  - 🟢 **Éxito**
+ 
+-   ```bash
+-   npx expo start
+-   ```
++### 🔔 Guardia Override (Cambio de Clase)
++Detecta automáticamente los cambios de tramo horario (según configuración del centro).
++- **Interrupción:** Detiene el carrusel cuando suena el timbre.
++- **Pantalla Fija:** Muestra las guardias durante un tiempo configurable (ej: 5 min).
++- **Aviso Sonoro:** Reproduce un sonido para llamar la atención.
++- **Cuenta Atrás:** Visualización del tiempo restante de la pausa.
+ 
+
++### 🛠️ Administración Remota (Google Sheets)
++No requiere backend complejo. Toda la información se gestiona editando hojas de cálculo de Google publicadas como CSV.
++- **Sincronización:** Actualización automática cada 60 segundos.
++- **Indicador de Salud:** Icono (Nube) que indica si los datos están actualizados o si hay error de conexión.
+ 
++## 🚀 Instalación y Puesta en Marcha
+ 
+-## Get a fresh project
++### Prerrequisitos
++- Node.js y npm instalados.
++- Cuenta de Expo (opcional para builds).
+ 
+-When you're ready, run:
++### Pasos
++1. **Clonar el repositorio:**
++   ```bash
++   git clone https://github.com/tu-usuario/kioscoapp-tv.git
++   cd kioscoapp-tv
++   ```
+-```bash
+-npm run reset-project
+-```
++2. **Instalar dependencias:**
++   ```bash
++   npm install
++   ```
+ 
+-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
++3. **Ejecutar en desarrollo:**
++   ```bash
++   npx expo start
++   ```
++   - Presiona `a` para Android.
++   - Presiona `w` para Web.
+ 
+-## Learn more
++---
+
++## ⚙️ Configuración y Uso
+ 
++### 1. Preparar los Datos (Google Sheets)
++Crea 4 hojas de cálculo (o pestañas) y publícalas como CSV (`Archivo > Compartir > Publicar en la web > CSV`).
+
++**Formatos de Columnas Esperados (Flexible):**
++*   **Guardias:** `Día`, `Tramo`, `Profesor`, `Zona`.
++*   **Alertas:** `Activo` (SI/NO), `Fecha Inicio`, `Fecha Fin`, `Hora Inicio`, `Hora Fin`, `Mensaje`, `Tipo`.
++*   **Ausencias:** `Profesor`, `Hora`, `Grupo`, `Aula`.
++*   **Actividades:** `Fecha`, `Hora`, `Actividad`, `Lugar`.
+ 
++### 2. Configuración en la App
++1. Abre la aplicación.
++2. Haz clic en el botón de engranaje (⚙️) en la esquina inferior derecha (o navega con el mando de la TV).
++3. Introduce el PIN de administrador (Por defecto: `1234`).
++4. En el menú, configura:
++    - **URLs:** Pega los enlaces CSV de tus hojas de Google.
++    - **Tiempos:** Intervalo de rotación y frecuencia de actualización.
++    - **Horarios:** Define los tramos horarios de tu centro.
++    - **Módulos:** Activa/Desactiva pantallas (Tiempo, RSS, WebViews).
+ 
+
++## 📱 Controles (Android TV)
++La interfaz está optimizada para navegación con D-Pad (Mando a distancia).
++- **Navegación:** Usa las flechas para mover el foco.
++- **Configuración:** Mueve el foco al icono ⚙️ y pulsa OK/Enter.
++
++---
++
++## 📂 Estructura del Proyecto
++
++```
++/
++├── assets/             # Imágenes y sonidos
++├── components/         # Componentes UI (Reloj, Alertas, etc.)
++├── context/            # Estado global (AppContext) y lógica de datos
++├── navigation/         # Navegación (Stack Navigator)
++├── screens/            # Pantallas principales (Guardia, Ausencias, Config...)
++├── services/           # Lógica de fetch (dataService)
++└── App.js              # Punto de entrada
++```
++
++## 📄 Licencia
++Este proyecto está bajo la Licencia MIT.
+
