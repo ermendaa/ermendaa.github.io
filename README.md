@@ -9,13 +9,13 @@ Web para visualizar el kiosco del IES FUERTE DE CORTADURA
 -   ```
 +### 🔄 Sistema de Rotación (Carrusel):
 +La aplicación rota automáticamente entre diferentes pantallas informativas:
-+- **Guardias:** Profesores de guardia en el tramo actual.
-+- **Ausencias:** Listado diario de profesores ausentes.
-+- **Actividades:** Eventos y actividades extraescolares.
-+- **Resumen:** Vista consolidada del día.
-+- **Noticias (RSS):** Feed de noticias configurable (ej: El Mundo).
-+- **El Tiempo:** Pronóstico meteorológico local.
-+- **WebViews:** Capacidad para incrustar hasta 2 páginas web externas.
++ - **Guardias:** Profesores de guardia en el tramo actual.
++ - **Ausencias:** Listado diario de profesores ausentes.
++ - **Actividades:** Eventos y actividades extraescolares.
++ - **Resumen:** Vista consolidada del día.
++ - **Noticias (RSS):** Feed de noticias configurable (ej: El Mundo).
++ - **El Tiempo:** Pronóstico meteorológico local.
++ - **WebViews:** Capacidad para incrustar hasta 2 páginas web externas.
  
 -2. Start the app
 +### 🚨 Sistema de Alertas Globales (Marquesina)
